@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
+from fastapi import FastAPI
 # Ajoute automatiquement le dossier parent (dossier_principal) au système
 sys.path.append(str(Path(__file__).resolve().parents[1]))
-from fastapi import FastAPI
 from routes.annonce_route import router as annonce_routeur
 #Importe le routeur  situé dans le dossier routes et le fichier 
 #annonce_route.py. Le mot-clé as annonce_router est un alias pour renommer localement 

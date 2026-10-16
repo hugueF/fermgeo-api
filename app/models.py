@@ -7,6 +7,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 
 class Annonce(Base):
+    '''Creee un table dans la base de donnee'''
     __tablename__ = "annonces"
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
@@ -14,4 +15,5 @@ class Annonce(Base):
     quantite: Mapped[int] = mapped_column(Integer, nullable=True)
     date: Mapped[datetime] = mapped_column(DateTime, nullable=False)
     lat: Mapped[float] = mapped_column(Float, nullable=True)
-    long: Mapped[float] = mapped_column(Float, nullable=True)
+    long: Mapped[float] = mapped_column(Float, nullable=True) 
+    ville: Mapped [str] = mapped_column(String, nullable = False)

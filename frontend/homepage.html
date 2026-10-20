@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fermgeo home page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="publier.html">Publier un produit</a></li> <!-- Lien vers la page de publication des anoonces-->
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1 class="main-title">Bienvenue sur fermgeo. <br>L'achat de produits locaux reinventé!!!</h1>
+        <h2 class="section-title">Découvrez nos produits frais du jour!</h2>
+        <div class="products">
+            <h3 class="section-title">Annonces du jours</h3>
+            <table class="product-table">
+                <thead>
+                    <tr class="table-header">
+                        <th>Nom du produit</th>
+                        <th>Quantité disponible</th>
+                        <th>Ville</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="annonces-table-body">
+                    <!-- Les annonces seront insérées ici par le script JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 fermgeo. Tous droits réservés.</p>
+    </footer>
+    <script src="Javascript/scripts.js"></script> <!-- Inclusion du fichier JavaScript pour charger les annonces -->
+</body>
+</html>

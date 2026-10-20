@@ -16,6 +16,7 @@ class AnnonceBase(BaseModel):
     # 2. Nouvelle syntaxe Pydantic V2 pour la configuration et l'exemple Swagger
     #model_config est un dictionnaire de configuration qui permet de personnaliser le comportement du modèle Pydantic.
     model_config = ConfigDict(
+        from_attributes=True,
         json_schema_extra={
             "example": {
                 "produit": "Fraises",

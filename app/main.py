@@ -25,7 +25,7 @@ app.include_router(annonce_routeur)
 FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend" #permet de définir le chemin vers le dossier frontend, qui contient les fichiers HTML, CSS et JavaScript de l'interface utilisateur.
 
 
-@app.get("/", include_in_schema=False) #permet de définir une route pour la page d'accueil de l'application.
+@app.get("/homepage.html", include_in_schema=False) #permet de définir une route pour la page d'accueil de l'application.
 async def homepage():
     return FileResponse(FRONTEND_DIR / "homepage.html")
 

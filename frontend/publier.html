@@ -18,15 +18,9 @@
     </header>
     <main class="main-content">
         <h1 class="main-title">Publier un produit</h1>
-        <form action="/publier" method="post" class="product-form">
+        <form  class="product-form" id="form-annonce">
             <label for="nom">Nom du produit:</label>
             <input type="text" id="nom" name="nom" required>
-
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-
-            <label for="prix">Prix:</label>
-            <input type="number" id="prix" name="prix" step="0.01" required>
 
             <label for="quantite">Quantité disponible:</label>
             <input type="number" id="quantite" name="quantite" required>
@@ -40,14 +34,15 @@
             <label for="longitude">Longitude:</label>
             <input type="number" id="longitude" name="longitude" step="0.0001" required>
 
-            <label for "date">Date:</label>
-            <input type "date" id "date" name "date" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
 
-            <button type "submit">Publier</button>
+            <button type="submit" id="submit">Publier</button>
         </form>
     </main>
     <footer class="footer">
         <p>&copy; 2026 fermgeo. Tous droits réservés.</p>
     </footer>
+    <script src="Javascript/scripts.js"></script>
 </body>
 </html>
